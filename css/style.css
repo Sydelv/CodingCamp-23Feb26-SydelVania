@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #fff9f3;
+}
+
+/* NAVBAR */
+nav {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 15px 30px;
+     border-bottom: 2px solid #f1c9cf;
+    background: #fbd6dc;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    background: #ff69b4;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: black;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #880e4f;
+    border: 1px solid #ff69b4;
+    padding: 6px 18px;
+    background: #f8f8f8;
+    font-size: 14px;
+}
+
+.menu a:not(:last-child) {
+    border-right: none;
+}
+
+.menu a:hover {
+    background: #ff69b4;
+    color: white;
+}
+
+.hero {
+    padding: 40px;
+    border-bottom: 2px solid #ffb6c1;
+}
+
+.hero h1 {
+    color: #c2185b;
+}
+
+.banner {
+    margin-top: 20px;
+    width: 100%;
+    aspect-ratio: 1366 / 578; /* Rasio asli */
+    background-image: url("../assets/Sydel\ Cop.png");
+    background-size: contain; /* Tidak crop */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hq {
+    padding: 40px;
+    border-bottom: 2px solid #ffb6c1;
+    text-align: center; 
+}
+
+.hq h2 {
+    color: #c2185b;
+    margin-bottom: 20px;
+}
+
+.cities {
+    display: flex;
+    justify-content: center; /* Center horizontal */
+    gap: 80px; /* Jarak antar kota */
+    margin-top: 20px;
+}
+
+.city {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center isi tiap kota */
+}
+
+.circle {
+    width: 120px;
+    height: 120px;
+    border: 3px solid #ff69b4;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    background: #ffe4ec;
+}
+
+
+
+.message {
+    padding: 40px;
+}
+
+.message h2 {
+    color: #c2185b;
+}
+
+.message-container {
+    display: flex;
+    gap: 20px;
+}
+
+form, .output {
+    flex: 1;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ff69b4;
+    border-radius: 8px;
+}
+
+button {
+    background: #ff69b4;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #c2185b;
+}
+
+.output {
+    border: 1px solid #ff69b4;
+    padding: 15px;
+    border-radius: 10px;
+    background: #fff5f8;
+}
+
+/* FOOTER DESIGN */
+
+.footer {
+    background: #ffc0cb;
+    color: rgb(22, 7, 7);
+    padding: 20px 30px;
+    margin-top: 30px;
+}
+
+.footer-container {
+    max-width: 100%;
+    margin: 0;
+    text-align: right;
+    font-size: 12px;
+}
+
+
+
+
+.profile-banner {
+    height: 300px;
+    background: linear-gradient(to right, #ff69b4, #ffc0cb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.profile-overlay h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.profile-overlay p {
+    font-size: 18px;
+}
+
+/* Container */
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+/* About Section */
+.about {
+    background: #fff5f8;
+}
+
+.about h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #c2185b;
+}
+
+.about p {
+    text-align: center;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Vision Mission */
+.vm-container {
+    display: flex;
+    gap: 30px;
+}
+
+.vision-box, .mission-box {
+    flex: 1;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.vision-box h2,
+.mission-box h2 {
+    color: #c2185b;
+    margin-bottom: 15px;
+}
+
+.mission-box ul {
+    padding-left: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .vm-container {
+        flex-direction: column;
+    }
+
+    .profile-overlay h1 {
+        font-size: 28px;
+    }
+}
